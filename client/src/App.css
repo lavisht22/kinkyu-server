@@ -1,0 +1,83 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100px;
+}
+
+.logo {
+  background-color: #1890ff;
+}
+
+.App-logo-collapsed {
+  height: 80px;
+}
+
+.App-header {
+  background: white;
+  height: 64px;
+}
+
+.App-title {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: overline;
+}
+
+.App-body {
+  background: white;
+  height: 100%;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  position: relative;
+  height: 100vh;
+}
+
+.Login-form img {
+  height: 170px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.full-screen {
+  color: red;
+}
+.header-avatar {
+  float: right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+}
+
+/* .Login-form > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
