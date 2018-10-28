@@ -19,7 +19,8 @@ async function registerDriver(req, res) {
     const newUser = await driverLib.registerDriver(driverObject);
     res.status(200).json(newUser);
   } catch (error) {
-    res.status(500).json(error);
+    console.log(error.toString());
+    res.status(500).json(error.toString());
   }
 }
 
@@ -34,7 +35,8 @@ async function updateLocation(req, res) {
     const updatedLocation = await driverLib.updateLocation(locationObject);
     res.status(200).json(updatedLocation);
   } catch (error) {
-    res.status(500).json(error);
+    console.log(error.toString());
+    res.status(500).json(error.toString());
   }
 }
 
@@ -48,7 +50,8 @@ async function queryDrivers(req, res) {
     const drivers = await driverLib.queryDrivers(locationObject);
     res.status(200).json(drivers);
   } catch (error) {
-    res.status(500).json(error);
+    console.log(error.toString());
+    res.status(500).json(error.toString());
   }
 }
 
