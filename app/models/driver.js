@@ -5,7 +5,6 @@ module.exports = mongoose.Schema({
   email: { type: String, required: true, unique: true },
   phone: { type: Number, required: false },
   vehicleNumber: { type: String, required: true },
-  pushToken: { type: String, require: true },
   location: {
     type: {
       type: String, // Don't do `{ location: { type: String } }`

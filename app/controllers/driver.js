@@ -12,7 +12,6 @@ async function registerDriver(req, res) {
     email: req.body.email,
     phone: req.body.phone,
     vehicleNumber: req.body.vehicle,
-    pushToken: req.body.pushToken,
   };
 
   try {
@@ -26,7 +25,7 @@ async function registerDriver(req, res) {
 
 async function updateLocation(req, res) {
   const locationObject = {
-    pushToken: req.body.pushToken,
+    phone: req.body.phone,
     long: Number(req.body.long),
     lat: Number(req.body.lat),
   };
